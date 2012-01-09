@@ -47,6 +47,10 @@ helpers do
 end
 
 # The root of your website. Accessible via http://<your-app>.herokuapp.com
+get "/david" do
+  "Hello there..."
+end
+
 get "/" do
   update_box_login            # updates login information if given
   account = require_box_login # make sure the user is authorized
